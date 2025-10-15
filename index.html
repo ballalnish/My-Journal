@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journal 🪴 </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Figma Illustrations -->
+    <img src="assets/star.png" class="decor-star" alt="star">
+    <img src="assets/heart.png" class="decor-heart" alt="heart">
+
+    <h1>My Daily Journal</h1>
+
+    <div class="entry-form">
+
+      <!-- Date & Time -->
+      <div class="field-card">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+        <label for="time">Time</label>
+        <input type="time" id="time">
+      </div>
+
+      <!-- Daily Brief -->
+      <div class="field-card">
+        <label for="brief">Daily Brief</label>
+        <textarea id="brief" placeholder="Write about your day..."></textarea>
+      </div>
+
+      <!-- Mood -->
+      <div class="field-card">
+        <label for="mood">Mood</label>
+        <select id="mood">
+          <option value="happy">😊 Happy</option>
+          <option value="sad">😔 Sad</option>
+          <option value="neutral">😐 Neutral</option>
+          <option value="excited">😃 Excited</option>
+          <option value="tired">😴 Tired</option>
+        </select>
+      </div>
+
+      <!-- Gratitude -->
+      <div class="field-card">
+        <label for="gratitude">Gratitude</label>
+        <textarea id="gratitude" placeholder="What are you grateful for today?"></textarea>
+      </div>
+
+      <!-- Accomplishments -->
+      <div class="field-card">
+        <label for="accomplishments">Accomplishments (one per line)</label>
+        <textarea id="accomplishments" placeholder="What did you achieve today?"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="saveBtn">Save Entry</button>
+        <button id="downloadBtn">Download Entry</button>
+      </div>
+
+    </div>
+
+    <!-- Mood Message -->
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
