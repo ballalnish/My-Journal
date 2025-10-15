@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #FCF9EA, #F0E5CF); 
+  background: linear-gradient(135deg, #FCF9EA, #FffffF); 
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -187,6 +187,7 @@ button:hover {
     margin-bottom: 10px;
   }
 }
+
 
 
 
